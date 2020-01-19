@@ -1,0 +1,51 @@
+.mui-marquee{
+    font-size: px2rem(24);
+    &-horizontal,&-horizontal_interval {
+        width: 100%;
+        overflow:hidden;
+        background-color: #ddd;
+        .mui-marquee__box {
+            display: inline-block;
+            width: auto;
+            white-space: nowrap;
+            transform: translate3d(0,0,0);
+            overflow: hidden;
+        }
+        li {
+            display: inline-block;
+            background-color: #ddd;
+        }
+    }
+    &-horizontal{
+        li {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &-horizontal_interval {
+        .mui-marquee__box {
+            width: 100%;
+        }
+        li {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    }
+    &-up,&-down {
+        overflow: hidden;
+        background-color: lightblue;
+        .mui-marquee__box{
+            width: 100%;
+        }
+        li {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
